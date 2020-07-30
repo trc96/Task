@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7A80EC24D2148F00311283 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A80EB24D2148F00311283 /* TaskListTableViewController.swift */; };
+		9F7A80F024D2151B00311283 /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A80EF24D2151B00311283 /* TaskDetailTableViewController.swift */; };
+		9F7A80F224D2165C00311283 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A80F124D2165C00311283 /* CoreDataStack.swift */; };
+		9F7A80F424D2189D00311283 /* Task + Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A80F324D2189D00311283 /* Task + Convenience.swift */; };
+		9F7A80F824D21A5600311283 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A80F724D21A5600311283 /* TaskController.swift */; };
+		9FCD4C3724D23362003C6C3B /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD4C3624D23362003C6C3B /* ButtonTableViewCell.swift */; };
+		9FCD4C3924D26178003C6C3B /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD4C3824D26178003C6C3B /* DateHelpers.swift */; };
 		FB4BD1A7237A1D88006648A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BD1A6237A1D88006648A7 /* AppDelegate.swift */; };
 		FB4BD1A9237A1D88006648A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BD1A8237A1D88006648A7 /* SceneDelegate.swift */; };
 		FB4BD1AE237A1D88006648A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4BD1AC237A1D88006648A7 /* Main.storyboard */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F7A80EB24D2148F00311283 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
+		9F7A80EF24D2151B00311283 /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailTableViewController.swift; sourceTree = "<group>"; };
+		9F7A80F124D2165C00311283 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		9F7A80F324D2189D00311283 /* Task + Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task + Convenience.swift"; sourceTree = "<group>"; };
+		9F7A80F724D21A5600311283 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		9FCD4C3624D23362003C6C3B /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		9FCD4C3824D26178003C6C3B /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
 		FB4BD1A3237A1D88006648A7 /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4BD1A6237A1D88006648A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4BD1A8237A1D88006648A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F7A80EA24D2140C00311283 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A80F624D21A4200311283 /* ModelControllers */,
+				9F7A80F524D21A3800311283 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F7A80F524D21A3800311283 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A80EB24D2148F00311283 /* TaskListTableViewController.swift */,
+				9F7A80EF24D2151B00311283 /* TaskDetailTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F7A80F624D21A4200311283 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A80F724D21A5600311283 /* TaskController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		9FCD4C3524D232DF003C6C3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD4C3624D23362003C6C3B /* ButtonTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FB4BD19A237A1D88006648A7 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				FB4BD1BE237A1E0B006648A7 /* Model */,
+				9F7A80EA24D2140C00311283 /* Controllers */,
+				9FCD4C3524D232DF003C6C3B /* Views */,
 				FB4BD1BF237A1E11006648A7 /* Storyboards */,
 				FB4BD1BD237A1E00006648A7 /* Resources */,
 			);
@@ -78,6 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				FB4BD1AF237A1D88006648A7 /* Task.xcdatamodeld */,
+				9F7A80F124D2165C00311283 /* CoreDataStack.swift */,
+				9F7A80F324D2189D00311283 /* Task + Convenience.swift */,
+				9FCD4C3824D26178003C6C3B /* DateHelpers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,7 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4BD1B1237A1D88006648A7 /* Task.xcdatamodeld in Sources */,
+				9FCD4C3724D23362003C6C3B /* ButtonTableViewCell.swift in Sources */,
 				FB4BD1A7237A1D88006648A7 /* AppDelegate.swift in Sources */,
+				9FCD4C3924D26178003C6C3B /* DateHelpers.swift in Sources */,
+				9F7A80EC24D2148F00311283 /* TaskListTableViewController.swift in Sources */,
+				9F7A80F224D2165C00311283 /* CoreDataStack.swift in Sources */,
+				9F7A80F024D2151B00311283 /* TaskDetailTableViewController.swift in Sources */,
+				9F7A80F424D2189D00311283 /* Task + Convenience.swift in Sources */,
+				9F7A80F824D21A5600311283 /* TaskController.swift in Sources */,
 				FB4BD1A9237A1D88006648A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
